@@ -42,6 +42,22 @@ class LoginViewController: UIViewController {
         passwordTF.text = nil
     }
     
+    @IBAction func remindUserNamePressed() {
+        addAlert(
+            title: "",
+            message: "Your user name is \(User.getUser().user)",
+            textField: nil)
+    }
+    
+    @IBAction func remindPasswordPressed() {
+        addAlert(
+            title: "",
+            message: "Your password is \(User.getUser().password)",
+            textField: nil)
+    }
+    
+    
+    
     private func checkingAutorization() -> Bool {
         guard let user = userNameTF.text, user == User.getUser().user,
               let password = passwordTF.text, password == User.getUser().password else {

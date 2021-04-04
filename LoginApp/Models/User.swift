@@ -1,3 +1,10 @@
+//
+//  AboutCreatorsViewController.swift
+//  LoginApp
+//
+//  Created by Artiom Poluyanovich on 4.04.21.
+//
+
 struct User {
     let user = "User"
     let password = "Password"
