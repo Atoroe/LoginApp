@@ -7,20 +7,17 @@
 
 import UIKit
 
-class WellcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
-    @IBOutlet weak var wellcomeTF: UILabel!
+    @IBOutlet weak var welcomeTF: UILabel!
     
     var welcomeText: String!
-    let clearUserNameTF = ""
-    let clearPasswordTF = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationController?.navigationBar.isHidden = true
         
-        wellcomeTF.text = welcomeText
+        welcomeTF.text = welcomeText
     }
     
 }
